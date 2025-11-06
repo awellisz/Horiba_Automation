@@ -1,6 +1,6 @@
 # Horiba Automation
 
-This repo is a collection of some of the code used to automate data collection and instrument control with a Horiba iHR-550 spectrometer and SynapsePlus CCD (without using LabSpec6 or other proprietary software). This code allows you to change the center wavelength and diffraction grating of the spectrometer as well as capture spectra with specified settings (integration time, binning, ROI).
+This repo is a collection of some of the code used to automate data collection and instrument control with a Horiba iHR-550 spectrometer and SynapsePlus CCD (without using LabSpec6 or other proprietary software). This code allows you to change the center wavelength and diffraction grating of the spectrometer as well as capture spectra with specified settings (integration time, binning, ROI). The details for how to use this code are found in `horiba_driver.py`. 
 
 Resources online for this are pretty thin, and the Jobin Yvon SDK manual is light on the details when it comes to setting this sort of thing up for the first time. The most important files here are `Horiba_CLI.exe` and `horiba_driver.py`. The former is a command line interface which can communicate with the iHR-550 and the SynapsePlus imaging CCD, and the latter is a Python wrapper to integrate it into the rest of our instrument control software. 
 
